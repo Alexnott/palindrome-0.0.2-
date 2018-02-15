@@ -18,11 +18,11 @@ int _tmain(int argc, _TCHAR* argv[])
 		i < j;
 		i++, j--)
 	{
-		if (Ignor.find(Fraza[i], 0) != string::npos) {
+		if (Ignor.find(Fraza[i], 0) == string::npos) {
 			j++;
 			continue;
 		}
-		if (Ignor.find(Fraza[j], 0) != string::npos) {
+		if (Ignor.find(Fraza[j], 0) == string::npos) {
 			i--;
 			continue;
 		}
